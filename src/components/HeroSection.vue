@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import KeyLogoAnimated from '@/composables/KeyLogoAnimated.vue'
+import KeyLogoAnimated from '@/components/KeyLogoAnimated.vue'
 </script>
 
 <template>
