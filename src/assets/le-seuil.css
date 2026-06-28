@@ -35,13 +35,15 @@
 
 html { scroll-behavior: smooth; }
 
-body {
-  margin: 0;
-  font-family: 'Work Sans', system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background: var(--bg, #fff);
-  color: var(--text-primary, oklch(0.27 0.020 80));
-  transition: background .35s, color .35s;
+:root {
+  body {
+    margin: 0;
+    font-family: 'Work Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: var(--bg, #fff);
+    color: var(--text-primary, oklch(0.27 0.020 80));
+    transition: background .35s, color .35s;
+  }
 }
 
 ::selection { background: oklch(0.66 0.09 85 / .30); }
