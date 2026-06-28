@@ -33,7 +33,7 @@ const menuOpen = ref(false)
           <rect x="31" y="104" width="8" height="56" rx="3" fill="url(#gKeyHeader)"/>
           <path d="M 35 199 C 16 184 14 163 24 158 C 29 154 35 159 35 166 C 35 159 41 154 46 158 C 56 163 54 184 35 199 Z" fill="url(#gKeyHeader)"/>
         </svg>
-        <span class="logo-name">le seuil</span>
+        <span class="logo-name">Aux Origines</span>
       </a>
 
       <nav :class="['nav', { 'nav--open': menuOpen }]">

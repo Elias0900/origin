@@ -133,11 +133,9 @@ defineExpose({ replay: startAnimation })
 
     <div id="k-word" style="text-align:center;opacity:0;transform:translateY(8px)">
       <slot>
-        <span class="wordmark">Revoir<em>.</em></span>
+        <span class="wordmark">Aux Origines<em>.</em></span>
       </slot>
     </div>
-
-    <span class="replay-hint">↺ relancer</span>
   </div>
 </template>
 
