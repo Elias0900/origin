@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{ dark: boolean }>()
+defineEmits(['toggle-theme'])
+</script>
 
 <template>
   <header class="header">
@@ -12,12 +15,7 @@
             stroke-linecap="round"
             fill="none"
           />
-          <line
-            x1="4" y1="127" x2="96" y2="127"
-            stroke="var(--accent)"
-            stroke-width="4"
-            stroke-linecap="round"
-          />
+          <line x1="4" y1="127" x2="96" y2="127" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" />
           <circle cx="50" cy="82" r="4" fill="var(--accent)" opacity="0.7" />
         </svg>
         <span class="logo-name">le seuil</span>
@@ -27,6 +25,9 @@
         <a href="#principe" class="nav-link">Le principe</a>
         <a href="#parcours" class="nav-link">Le parcours</a>
         <a href="#pourqui" class="nav-link">Pour qui</a>
+        <button class="theme-btn" @click="$emit('toggle-theme')">
+          {{ dark ? '☀ Clair' : '◑ Sombre' }}
+        </button>
         <a href="#demande" class="cta">Commencer</a>
       </nav>
     </div>
@@ -41,6 +42,7 @@
   background: var(--header-bg);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
+  transition: background 0.4s, border-color 0.4s;
 }
 .inner {
   max-width: 1280px;
@@ -57,10 +59,9 @@
   text-decoration: none;
 }
 .logo-name {
-  font:
-    italic 500 22px/1 'Spectral',
-    serif;
+  font: italic 500 22px/1 'Spectral', serif;
   color: var(--text-primary);
+  transition: color 0.4s;
 }
 .nav {
   display: flex;
@@ -68,14 +69,26 @@
   gap: 32px;
 }
 .nav-link {
-  font:
-    400 15px/1 'Work Sans',
-    sans-serif;
-  color: var(--text-primary);
+  font: 400 15px/1 'Work Sans', sans-serif;
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.2s;
 }
 .nav-link:hover {
+  color: var(--accent);
+}
+.theme-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 7px 14px;
+  font: 400 13px/1 'Work Sans', sans-serif;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+.theme-btn:hover {
+  border-color: var(--accent);
   color: var(--accent);
 }
 .cta {
@@ -83,15 +96,10 @@
   background: var(--accent);
   border: 1.5px solid var(--accent);
   color: #fff;
-  font:
-    500 14px/1 'Work Sans',
-    sans-serif;
+  font: 500 14px/1 'Work Sans', sans-serif;
   border-radius: 3px;
   text-decoration: none;
-  transition:
-    background 0.6s ease,
-    border-color 0.6s ease,
-    color 0.6s ease;
+  transition: background 0.6s ease, border-color 0.6s ease, color 0.6s ease;
 }
 .cta:hover {
   background: transparent;

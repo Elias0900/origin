@@ -6,28 +6,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Work+Sans:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
 
 :root {
-  --accent: oklch(0.60 0.12 78);
-  --bg: oklch(0.97 0.008 82);
-  --section-bg: oklch(0.94 0.010 80);
-  --card-bg: oklch(0.99 0.004 78);
-  --border: oklch(0.87 0.014 80);
-  --text-primary: oklch(0.25 0.022 75);
-  --text-secondary: oklch(0.46 0.018 72);
-  --text-tertiary: oklch(0.63 0.012 74);
-  --logo-stroke: oklch(0.40 0.025 72);
-  --logo-text: oklch(0.25 0.022 75);
-  --quote-color: oklch(0.50 0.09 72);
-  --header-bg: oklch(0.97 0.008 82 / .92);
-  --toggle-bg: oklch(0.94 0.010 80);
-  --input-bg: oklch(0.98 0.005 80);
-  --footer-bg: oklch(0.22 0.022 72);
-  --footer-text: oklch(0.96 0.008 80);
-  --footer-sub: oklch(0.65 0.015 76);
-  --footer-logo: oklch(0.88 0.010 78);
-  --accent-shadow: oklch(0.60 0.12 78 / .22);
-  --accent-text: oklch(0.48 0.10 72);
-  --form-shadow: 0 18px 50px oklch(0.60 0.06 78 / .10);
-  --arch-bg: oklch(0.93 0.012 80);
+  --accent: oklch(0.58 0.08 80);
+  --bg: oklch(0.978 0.005 85);
+  --section-bg: oklch(0.958 0.006 82);
+  --card-bg: oklch(0.992 0.003 82);
+  --border: oklch(0.91 0.006 82);
+  --text-primary: oklch(0.28 0.016 76);
+  --text-secondary: oklch(0.50 0.012 76);
+  --text-tertiary: oklch(0.65 0.008 78);
+  --logo-stroke: oklch(0.44 0.018 76);
+  --logo-text: oklch(0.28 0.016 76);
+  --quote-color: oklch(0.52 0.065 78);
+  --header-bg: oklch(0.978 0.005 85 / .92);
+  --toggle-bg: oklch(0.958 0.006 82);
+  --input-bg: oklch(0.985 0.004 82);
+  --footer-bg: oklch(0.26 0.014 76);
+  --footer-text: oklch(0.96 0.005 82);
+  --footer-sub: oklch(0.66 0.010 78);
+  --footer-logo: oklch(0.88 0.008 80);
+  --accent-shadow: oklch(0.58 0.08 80 / .16);
+  --accent-text: oklch(0.50 0.07 78);
+  --form-shadow: 0 18px 50px oklch(0.58 0.04 80 / .08);
+  --arch-bg: oklch(0.952 0.008 82);
   --sel-bg: oklch(0.91 0.018 78);
 }
 
