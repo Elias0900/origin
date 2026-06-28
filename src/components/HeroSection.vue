@@ -19,8 +19,8 @@ import KeyLogoAnimated from '@/components/KeyLogoAnimated.vue'
           porte. Nous créons le cadre de confiance et la médiation qui rendent ce retour possible.
         </p>
         <div class="hero-actions">
-          <a href="#demande" class="btn-primary">Ouvrir cette porte →</a>
-          <a href="#parcours" class="btn-ghost">Comment ça marche</a>
+          <a class="btn-primary">Ouvrir cette porte →</a>
+          <a class="btn-ghost">Comment ça marche</a>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@ import KeyLogoAnimated from '@/components/KeyLogoAnimated.vue'
 .btn-primary {
   padding: 15px 28px;
   background: var(--accent);
-  border: 1.5px solid var(--accent);
+  border: 2px solid var(--accent);
   color: #fff;
   font:
     500 15px/1 'Work Sans',
@@ -91,6 +91,7 @@ import KeyLogoAnimated from '@/components/KeyLogoAnimated.vue'
     background 0.6s ease,
     border-color 0.6s ease,
     color 0.6s ease;
+  cursor: pointer;
 }
 .btn-primary:hover {
   background: transparent;
@@ -98,8 +99,9 @@ import KeyLogoAnimated from '@/components/KeyLogoAnimated.vue'
   color: var(--accent);
 }
 .btn-ghost {
+  cursor: pointer;
   padding: 15px 28px;
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
   color: var(--text-secondary);
   font:
     500 15px/1 'Work Sans',
