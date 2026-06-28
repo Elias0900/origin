@@ -90,4 +90,9 @@
   color: var(--footer-sub);
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .footer { padding: 40px 20px; }
+  .inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+}
 </style>

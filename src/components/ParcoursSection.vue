@@ -172,4 +172,14 @@ const steps = [
     sans-serif;
   color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+  .parcours { padding: 64px 20px; }
+  .title { font-size: 28px; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 36px;
+  }
+}
 </style>

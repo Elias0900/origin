@@ -57,4 +57,11 @@
     serif;
   color: var(--quote-color);
 }
+
+@media (max-width: 768px) {
+  .principe { padding: 64px 20px; }
+  .title { font-size: 28px; }
+  .body { font-size: 15.5px; }
+  .quote { font-size: 21px; margin-top: 32px; }
+}
 </style>

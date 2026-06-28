@@ -102,4 +102,12 @@ const cards = [
     sans-serif;
   color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+  .pourqui { padding: 64px 20px; }
+  .title { font-size: 28px; }
+  .grid { grid-template-columns: 1fr; gap: 16px; }
+  .card { padding: 24px; }
+  .card-title { font-size: 22px; }
+}
 </style>

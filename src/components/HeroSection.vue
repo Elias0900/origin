@@ -112,4 +112,22 @@ import ArchAnimation from './ArchAnimation.vue'
   border-color: var(--accent);
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .hero { padding: 0 20px; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 48px 0 56px;
+    gap: 36px;
+  }
+  .hero-visual { height: 280px; }
+  .headline { font-size: 36px; }
+  .body-text { font-size: 15px; }
+  .hero-actions { flex-direction: column; }
+  .btn-primary, .btn-ghost { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .headline { font-size: 30px; }
+}
 </style>

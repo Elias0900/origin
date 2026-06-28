@@ -453,4 +453,12 @@ function restart() {
   color: var(--accent);
   padding-bottom: 3px;
 }
+
+@media (max-width: 768px) {
+  .demande { padding: 64px 16px; }
+  .title { font-size: 26px; }
+  .form-body { padding: 20px 18px; }
+  .form-progress { padding: 18px 18px 0; }
+  .nav-next { padding: 12px 18px; font-size: 14px; }
+}
 </style>

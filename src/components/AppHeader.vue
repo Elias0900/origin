@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 defineProps<{ dark: boolean }>()
 defineEmits(['toggle-theme'])
+
+const menuOpen = ref(false)
 </script>
 
 <template>
   <header class="header">
     <div class="inner">
-      <a href="#top" class="logo">
+      <a href="#top" class="logo" @click="menuOpen = false">
         <svg width="20" height="28" viewBox="0 0 100 132" fill="none">
           <path
             d="M 14 120 L 14 44 A 36 36 0 0 1 86 44 L 86 120"
@@ -21,15 +25,21 @@ defineEmits(['toggle-theme'])
         <span class="logo-name">le seuil</span>
       </a>
 
-      <nav class="nav">
-        <a href="#principe" class="nav-link">Le principe</a>
-        <a href="#parcours" class="nav-link">Le parcours</a>
-        <a href="#pourqui" class="nav-link">Pour qui</a>
+      <nav :class="['nav', { 'nav--open': menuOpen }]">
+        <a href="#principe" class="nav-link" @click="menuOpen = false">Le principe</a>
+        <a href="#parcours" class="nav-link" @click="menuOpen = false">Le parcours</a>
+        <a href="#pourqui" class="nav-link" @click="menuOpen = false">Pour qui</a>
         <button class="theme-btn" @click="$emit('toggle-theme')">
           {{ dark ? '☀ Clair' : '◑ Sombre' }}
         </button>
-        <a href="#demande" class="cta">Commencer</a>
+        <a href="#demande" class="cta" @click="menuOpen = false">Commencer</a>
       </nav>
+
+      <button class="burger" :aria-expanded="menuOpen" @click="menuOpen = !menuOpen">
+        <span :class="['burger-line', { 'burger-line--open': menuOpen }]" />
+        <span :class="['burger-line', { 'burger-line--open': menuOpen }]" />
+        <span :class="['burger-line', { 'burger-line--open': menuOpen }]" />
+      </button>
     </div>
   </header>
 </template>
@@ -74,9 +84,8 @@ defineEmits(['toggle-theme'])
   text-decoration: none;
   transition: color 0.2s;
 }
-.nav-link:hover {
-  color: var(--accent);
-}
+.nav-link:hover { color: var(--accent); }
+
 .theme-btn {
   background: none;
   border: 1px solid var(--border);
@@ -105,5 +114,66 @@ defineEmits(['toggle-theme'])
   background: transparent;
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.burger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.burger-line--open:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger-line--open:nth-child(2) { opacity: 0; }
+.burger-line--open:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+  .inner {
+    padding: 16px 20px;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: var(--header-bg);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px 20px;
+  }
+  .nav--open {
+    display: flex;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .theme-btn {
+    margin-top: 14px;
+  }
+  .cta {
+    margin-top: 14px;
+    width: 100%;
+    text-align: center;
+  }
 }
 </style>
