@@ -57,7 +57,7 @@ function replay() {
       <!-- Arch stroke -->
       <path
         d="M 14 112 L 14 44 A 36 36 0 0 1 86 44 L 86 112"
-        stroke="oklch(0.88 0.008 224)"
+        stroke="oklch(0.52 0.035 75)"
         stroke-width="2.6"
         stroke-linecap="round"
         stroke-dasharray="260"
@@ -70,7 +70,7 @@ function replay() {
         y1="118"
         x2="96"
         y2="118"
-        stroke="oklch(0.70 0.10 52)"
+        stroke="oklch(0.60 0.12 78)"
         stroke-width="2.4"
         stroke-linecap="round"
         stroke-dasharray="100"

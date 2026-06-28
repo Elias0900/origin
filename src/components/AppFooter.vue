@@ -60,7 +60,7 @@
 .brand-name {
   display: block;
   font:
-    italic 600 22px/1 'Cormorant Garamond',
+    italic 600 22px/1 'Spectral',
     serif;
   color: var(--footer-text);
 }
@@ -68,7 +68,7 @@
   display: block;
   margin-top: 5px;
   font:
-    300 11px/1 'Jost',
+    300 11px/1 'Work Sans',
     sans-serif;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -85,7 +85,7 @@
 }
 .link {
   font:
-    300 13px/1 'Jost',
+    300 13px/1 'Work Sans',
     sans-serif;
   color: var(--footer-sub);
   text-decoration: none;

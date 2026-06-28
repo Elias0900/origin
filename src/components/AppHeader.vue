@@ -4,22 +4,21 @@
   <header class="header">
     <div class="inner">
       <a href="#top" class="logo">
-        <svg width="16" height="20" viewBox="0 0 52 62" fill="none" style="opacity: 0.85">
+        <svg width="20" height="28" viewBox="0 0 100 132" fill="none">
           <path
-            d="M 2 60 L 2 2 L 50 2 L 50 60"
+            d="M 14 120 L 14 44 A 36 36 0 0 1 86 44 L 86 120"
             stroke="var(--logo-stroke)"
-            stroke-width="2.8"
-            stroke-linecap="square"
-            fill="none"
-          />
-          <path
-            d="M 2 2 L 30 6 L 30 60"
-            stroke="var(--accent)"
-            stroke-width="2"
+            stroke-width="4"
             stroke-linecap="round"
             fill="none"
           />
-          <circle cx="27" cy="33" r="2.5" fill="var(--accent)" />
+          <line
+            x1="4" y1="127" x2="96" y2="127"
+            stroke="var(--accent)"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <circle cx="50" cy="82" r="4" fill="var(--accent)" opacity="0.7" />
         </svg>
         <span class="logo-name">le seuil</span>
       </a>
@@ -59,7 +58,7 @@
 }
 .logo-name {
   font:
-    italic 500 22px/1 'Cormorant Garamond',
+    italic 500 22px/1 'Spectral',
     serif;
   color: var(--text-primary);
 }
@@ -70,7 +69,7 @@
 }
 .nav-link {
   font:
-    400 15px/1 'Jost',
+    400 15px/1 'Work Sans',
     sans-serif;
   color: var(--text-primary);
   text-decoration: none;
@@ -85,7 +84,7 @@
   border: 1.5px solid var(--accent);
   color: #fff;
   font:
-    500 14px/1 'Jost',
+    500 14px/1 'Work Sans',
     sans-serif;
   border-radius: 3px;
   text-decoration: none;

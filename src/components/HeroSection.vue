@@ -47,7 +47,7 @@ import ArchAnimation from './ArchAnimation.vue'
 
 .overline {
   font:
-    500 12px/1 'Jost',
+    500 12px/1 'Work Sans',
     sans-serif;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ import ArchAnimation from './ArchAnimation.vue'
 .headline {
   margin: 22px 0 0;
   font:
-    500 52px/1.08 'Cormorant Garamond',
+    500 52px/1.08 'Spectral',
     serif;
   color: var(--text-primary);
   letter-spacing: -0.01em;
@@ -65,7 +65,7 @@ import ArchAnimation from './ArchAnimation.vue'
 .body-text {
   margin: 24px 0 0;
   font:
-    300 17px/1.65 'Jost',
+    300 17px/1.65 'Work Sans',
     sans-serif;
   color: var(--text-secondary);
   max-width: 480px;
@@ -81,7 +81,7 @@ import ArchAnimation from './ArchAnimation.vue'
   border: 1.5px solid var(--accent);
   color: #fff;
   font:
-    500 15px/1 'Jost',
+    500 15px/1 'Work Sans',
     sans-serif;
   border-radius: 3px;
   text-decoration: none;
@@ -100,7 +100,7 @@ import ArchAnimation from './ArchAnimation.vue'
   border: 1.5px solid var(--border);
   color: var(--text-secondary);
   font:
-    500 15px/1 'Jost',
+    500 15px/1 'Work Sans',
     sans-serif;
   border-radius: 3px;
   text-decoration: none;

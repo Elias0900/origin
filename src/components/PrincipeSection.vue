@@ -28,7 +28,7 @@
 }
 .overline {
   font:
-    500 11px/1 'Jost',
+    500 11px/1 'Work Sans',
     sans-serif;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -38,14 +38,14 @@
 .title {
   margin: 20px 0 0;
   font:
-    500 38px/1.18 'Cormorant Garamond',
+    500 38px/1.18 'Spectral',
     serif;
   color: var(--text-primary);
 }
 .body {
   margin: 26px 0 0;
   font:
-    300 17.5px/1.7 'Jost',
+    300 17.5px/1.7 'Work Sans',
     sans-serif;
   color: var(--text-secondary);
 }
@@ -53,7 +53,7 @@
   margin: 48px auto 0;
   max-width: 560px;
   font:
-    italic 400 26px/1.55 'Cormorant Garamond',
+    italic 400 26px/1.55 'Spectral',
     serif;
   color: var(--quote-color);
 }
