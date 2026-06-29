@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import logoSrc from '@/assets/cle-arche.png'
+import logoSrc from '@/assets/cle-arche-header.png'
 
 defineProps<{ dark: boolean }>()
 defineEmits(['toggle-theme'])
@@ -125,7 +125,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
 }
 .logo-img {
   display: block;
-  height: 40px;
+  height: 54px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;

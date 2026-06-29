@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logoSrc from '@/assets/cle-arche.png'
+import logoSrc from '@/assets/cle-arche-header.png'
 </script>
 
 <template>
@@ -63,7 +63,7 @@ import logoSrc from '@/assets/cle-arche.png'
 }
 .brand-img {
   display: block;
-  height: 60px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
